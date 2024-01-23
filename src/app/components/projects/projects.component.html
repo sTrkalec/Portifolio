@@ -5,8 +5,11 @@
     *ngIf="repositories && repositories.length > 0; else noRepositories"
   >
     <div class="crieumanova">
-      <div class="container-cards">
-        <div class="cards" *ngFor="let repo of repositories; let even = even">
+      <div
+        class="container-cards"
+        *ngFor="let repo of repositories; let even = even"
+      >
+        <div class="cards">
           <a
             href="{{ repo.homepage ?? repo.html_url }}"
             target="_blank"
