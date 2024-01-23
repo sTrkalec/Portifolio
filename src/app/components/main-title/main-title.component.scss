@@ -51,9 +51,17 @@
     width: 100%; /* Ajusta a largura para ocupar 100% da largura em telas menores */
     display: flex;
     align-items: center;
+
+    img {
+      width: 100%;
+    }
   }
 
   .title-name {
+    text-align: center;
+  }
+
+  p {
     text-align: center;
   }
 }
