@@ -17,13 +17,15 @@ describe('AppComponent', () => {
   it(`should have the 'portifolio' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('portifolio');
+    expect(app.title).toEqual('Gabriel Miranda - CV');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, portifolio');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, portifolio'
+    );
   });
 });

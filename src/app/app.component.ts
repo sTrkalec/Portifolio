@@ -26,6 +26,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
 })
 export class AppComponent {
+  public title = 'Gabriel Miranda - CV';
+
   scrollToProjects() {
     const projectsSection = document.getElementById('projects-section');
     if (projectsSection) {
