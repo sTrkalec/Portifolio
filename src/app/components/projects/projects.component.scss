@@ -1,0 +1,99 @@
+.projects-container {
+  padding: 0px 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+}
+
+.crieumanova {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.crieumanova .container-cards {
+  flex: 1 1 calc(50% - 1rem); /* Ajuste para ocupar 50% da largura, considerando a margem */
+  margin-bottom: 1rem; /* Adiciona uma margem inferior entre as linhas de cartões */
+}
+
+.crieumanova .cards {
+  width: 100%; /* Garante que o cartão ocupe 100% da largura da container-cards */
+  padding: 1.5rem;
+  gap: 1rem;
+  background-color: var(--card-backgroud);
+  border-radius: 8px;
+}
+
+.stacks-project {
+  display: flex;
+  gap: 1rem;
+}
+
+.stack {
+  background-color: #8455ff;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.stacks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.container-cards {
+  display: flex;
+  padding: 0px 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button-style-container {
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  button {
+    background: linear-gradient(90deg, #5222d0 -0.37%, #ff6196 115.65%);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    max-width: 50%;
+    margin-top: 2.75rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* Adicione regras de mídia para tamanhos de tela menores */
+@media (max-width: 768px) {
+  .crieumanova .container-cards {
+    flex: 0 0 100%; /* Alteração para ocupar 100% da largura em telas menores (mobile) */
+  }
+}

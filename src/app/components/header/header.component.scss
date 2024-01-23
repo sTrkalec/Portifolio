@@ -1,0 +1,47 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1.2rem;
+  background-color: var(--header-background);
+}
+
+.button-separator {
+  display: flex;
+  gap: 2rem;
+}
+
+.button-project {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.button-contact {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #5222d0 1.55%, #ff6196 100.52%);
+  padding: 8px 24px;
+  border-radius: 8px;
+  color: white;
+}
+
+.button-theme {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}

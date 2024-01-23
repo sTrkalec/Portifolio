@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+// styles.scss
+:root {
+  --text-color: ;
+  --background-color: #fff;
+  --header-background: transparent;
+  --card-backgroud-color: #f0f0f0;
+}
+
+.light-theme {
+  --primary-text-color: #333;
+  --background: var(--background-color);
+  --header-background: var(--header-background-color);
+  --card-backgroud: var(--card-backgroud-color);
+  // Adicione outros estilos para o tema claro aqui
+}
+
+.dark-theme {
+  --primary-text-color: #fff;
+  --background: #2c2c2c;
+  --header-background: #3f3f3f80;
+  --card-backgroud: var(--card-backgroud-color);
+  // Adicione outros estilos para o tema escuro aqui
+}
+
+body:not(.dark-mode-preloading) {
+  transition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--background);
+}

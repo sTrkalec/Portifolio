@@ -1,0 +1,35 @@
+.contact-container {
+  padding: 0px 3rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+}
+
+.container-img {
+  display: flex;
+  gap: 1rem;
+
+  img {
+    max-width: 90%;
+    object-fit: cover;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+
+    span {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--primary-text-color);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<router-outlet />
+
+<main>
+  <app-header
+    (scrollToProjects)="scrollToProjects()"
+    (scrollToContact)="scrollToContact()"
+  />
+  <app-main-title />
+  <app-main-about-me />
+  <app-projects id="projects-section" />
+  <app-contact id="contact-section" />
+</main>

@@ -1,0 +1,59 @@
+.main-container {
+  display: flex;
+  flex-direction: row; /* Direção padrão do layout: linha */
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.container-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title-name {
+  background: linear-gradient(90deg, #5222d0 -0.37%, #ff6196 115.65%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3.5rem;
+  background-clip: text;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-curriculo {
+  background: linear-gradient(90deg, #5222d0 -0.37%, #ff6196 115.65%);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  max-width: 50%;
+  margin-top: 2.75rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores que 768 pixels (tamanho de celular) */
+  .main-container {
+    flex-direction: column-reverse; /* Inverte a ordem dos elementos em telas menores */
+  }
+
+  .container-info,
+  .image-container {
+    width: 100%; /* Ajusta a largura para ocupar 100% da largura em telas menores */
+    display: flex;
+    align-items: center;
+  }
+
+  .title-name {
+    text-align: center;
+  }
+}

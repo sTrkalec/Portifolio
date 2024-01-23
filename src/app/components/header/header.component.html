@@ -1,0 +1,24 @@
+<header class="header-container">
+  <div class="button-separator">
+    <button
+      type="button"
+      class="button-project"
+      (click)="onProjectsButtonClick()"
+    >
+      Projetos
+    </button>
+    <button
+      type="button"
+      class="button-contact"
+      (click)="onContactButtonClick()"
+    >
+      Contato
+    </button>
+
+    <button type="button" class="button-theme" (click)="toggleTheme()">
+      <span class="material-symbols-outlined">
+        {{ themeService.isDarkMode ? "light_mode" : "dark_mode" }}
+      </span>
+    </button>
+  </div>
+</header>
